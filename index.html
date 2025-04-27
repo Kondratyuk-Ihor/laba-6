@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хрестики-Нолики</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 20px; }
+    .board { display: grid; grid-template-columns: repeat(3, 100px); grid-gap: 5px; justify-content: center; }
+    .cell { width: 100px; height: 100px; font-size: 2em; display: flex; align-items: center; justify-content: center; border: 2px solid #333; cursor: pointer; }
+    #restartBtn { margin-top: 20px; padding: 10px 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Гра Хрестики-Нолики</h1>
+  <div class="board" id="board"></div>
+  <h2 id="status"></h2>
+  <button id="restartBtn">Грати заново</button>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
